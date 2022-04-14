@@ -1,0 +1,207 @@
+.appbar {
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  background-color: rgb(192, 60, 60);
+  width: 76vw;
+  height: 10vh;
+  text-align: center;
+  justify-content: center;
+  padding: 4%;
+  color: rgb(255, 255, 255);
+
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(4px) saturate(100%);
+      -webkit-backdrop-filter: blur(3px) saturate(100%);
+      background-color: rgba(255, 255, 255, 0);
+  
+      border-bottom: 1px solid rgba(209, 213, 219, 0.3);
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+ 
+}
+.transaction {
+  margin: 0px;
+  height: 100vh;
+  width: 76vw;
+  background-color: #333232;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+}
+.chat{
+  margin: 8%;
+  padding: 5%;
+  width: 60%;
+  height: 5%;
+  border-radius: 10px;
+background: linear-gradient(145deg, #2e2d2d, #373636);
+box-shadow:  2px 2px 2px #141414,
+             -2px -2px 2px #525050;
+        
+}
+.rightchat{
+  margin-left: 26%;
+}
+.leftchat{
+  margin-left: 4%;
+}
+.desc {
+  margin: 0px;
+}
+
+
+
+.action{
+  z-index: 1;
+  position: fixed;
+  bottom: 0%;
+  color: rgb(24, 25, 26);
+  padding: 1% 1% 8% 0;
+  bottom: 0px;
+  background-color: #81343488;
+  width:76vw;
+  height: 15vh;
+ 
+  backdrop-filter: blur(4px) saturate(100%);
+  -webkit-backdrop-filter: blur(3px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(4px) saturate(100%);
+    -webkit-backdrop-filter: blur(3px) saturate(100%);
+    background-color: rgba(255, 255, 255, 0);
+
+    border-top: 1px solid rgba(209, 213, 219, 0.3);
+}
+.buttons{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+ 
+}
+.total{
+  color: antiquewhite;
+  font-size: x-large;
+    text-align: center;
+    margin: 2% 2% 2% 2%;
+ 
+}
+.buttons a{
+  text-decoration: none;
+  color: antiquewhite;
+  margin: 3% ;
+  padding: 3%;
+  height: 18%;
+  width: 40%;
+  border-radius: 3px;
+  background: #f36c6c;
+
+
+}
+#receive{
+  color: #464545;
+  border-radius: 3px;
+background: #6cf382;
+
+}
+#pay{
+  color: #464545;
+}
+
+.modal-window {
+  position: fixed;
+ text-align: center;
+ 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ 
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+ .modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window>div {
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+    color: white;
+    font-size:small ;
+
+
+    background: rgba(44, 44, 44, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+
+#input{
+  height: 20px;
+  border-radius: 6px;
+  padding: 4%;
+  margin: 4% 0%;
+}
+.modal-close {
+  color: #858584;
+  
+  font-size: 18px;
+  margin-top: 8%;
+  text-align: center;
+ 
+  width: 40px;
+  text-decoration: none;
+}
+ .modal-close:hover {
+    color: black;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    padding: 4%;
+    justify-content: space-evenly;
+  }
+.form div{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+
+}
+.form label{
+  font-size: 20px;
+  margin-bottom: 6%;
+
+}
+.add-btn input{
+  background-color: #4e4e4e;
+  padding: 10px 25px 10px 25px;
+    margin: 16px 0px 8px 0px;
+  border-radius: 3px;
+  color: #f3fc7a;
+  border: none;
+  font-size: 15px;
+  background: linear-gradient(145deg, #252727, #202020);
+  box-shadow:  5px 5px 10px #0e0e0e,
+               -5px -5px 10px #383a3a;
+              
+}
+.add-btn input:active{
+  background: linear-gradient(145deg, #202020, #252727);
+box-shadow:  5px 5px 10px #0e0e0e,
+             -5px -5px 10px #383a3a;
+}

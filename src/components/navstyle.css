@@ -1,0 +1,163 @@
+.nav {
+  background-color: rgb(35, 36, 36);
+  height: 100vh;
+  width: 24vw;
+  text-align: center;
+  justify-content: center;
+
+  padding-top: 6%;
+  overflow-y: scroll;
+  border-right: 1px solid rgb(114, 112, 112);
+  box-shadow:  2px 2px 2px #141414,
+             -2px -2px 2px #525050;
+}
+
+.hamburger {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(26, 25, 25);
+  color: #918d8d;
+  text-align: center;
+  font-size: 40px;
+  position: fixed;
+  top: 2vh;
+  left: 4vw; 
+ 
+background: #232424;
+box-shadow:  -5px -5px 10px #0e0e0e,
+ 5px 5px 10px #383a3a;
+}
+
+.container {
+  height: 71%;
+  overflow-y: scroll;
+  background-color: rgb(35, 36, 36);
+  margin-top: 85%;
+  justify-content: center;
+  align-items: center;
+}
+.avatar {
+ overflow: hidden;
+  background-color: aliceblue;
+  border-radius: 10%;
+  width: 70%;
+  height: 7%;
+  margin: auto;
+  padding: 2%;
+  margin-top: 20%;
+}
+
+#add-button {
+  z-index: 999;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background-color: rgb(28, 29, 29);
+ 
+  line-height: 55px;
+  font-size: 40px;
+  position: fixed;
+  bottom: 8%;
+  left: 4%;
+
+  background: #232424;
+box-shadow:  -5px 5px 10px #0e0e0e,
+             5px -5px 10px #383a3a;
+}
+#add-button:active{
+  box-shadow: inset -5px 5px 10px #0e0e0e,
+            inset 5px -5px 10px #383a3a;
+  
+}
+#add-button a{
+  text-decoration: none;
+  color: #faf762;
+}
+
+.modal-window {
+  position: fixed;
+ z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+ .modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 999;
+  }
+  .modal-window>div {
+    width: 75%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+    color: white;
+    font-size:small ;
+
+
+    background: rgba(44, 44, 44, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+
+#input{
+  height: 20px;
+  border-radius: 6px;
+  padding: 4%;
+}
+.modal-close {
+  color: #858584;
+  
+  font-size: 20px;
+  padding-top: 3%;
+  text-align: center;
+ 
+  width: 70px;
+  text-decoration: none;
+}
+ .modal-close:hover {
+    color: black;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    padding: 4%;
+    justify-content: space-evenly;
+  }
+.form div{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6%;
+
+}
+.form label{
+  font-size: 20px;
+}
+.add-btn input{
+  background-color: #575755;
+  padding: 10px 25px 10px 25px;
+    margin: 16px 0px 8px 0px;
+  border-radius: 10px;
+  color: #464545;
+ 
+  font-size: 20px;
+  
+}
